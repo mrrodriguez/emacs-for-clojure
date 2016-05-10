@@ -10,3 +10,21 @@
 
 ;; Go straight to scratch buffer on startup
 (setq inhibit-startup-message t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Mac keyboard layout
+
+(setq mac-option-modifier 'control)
+(setq mac-command-modifier 'meta)
+
+(setq max-lisp-eval-depth 10000)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Desktop mode TODO
+;;(desktop-save-mode 1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Global key bindings
+
+(global-set-key (kbd "M-~") 'other-frame)
