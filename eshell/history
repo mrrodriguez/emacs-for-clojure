@@ -1,1 +1,4 @@
 cd ../
+grep -ir 'camel-snake-kebab' .
+cd ../synapse-infra-test/
+grep -ir 'camel-snake-kebab' .

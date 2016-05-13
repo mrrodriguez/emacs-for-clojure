@@ -4,6 +4,13 @@
 ;; http://www.emacswiki.org/emacs/HippieExpand
 (global-set-key (kbd "M-/") 'hippie-expand)
 
+;; Key binding for deleting whitespace around the point.
+(global-set-key (kbd "M-\\")
+                (lambda ()
+                  (interactive)
+                  (just-one-space -1)
+                  (delete-horizontal-space)))
+
 ;; Lisp-friendly hippie expand
 (setq hippie-expand-try-functions-list
       '(try-expand-dabbrev
