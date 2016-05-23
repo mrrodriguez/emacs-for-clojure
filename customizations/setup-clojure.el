@@ -31,6 +31,7 @@
 
 ;; Enable cider in Clojure
 (add-hook 'clojure-mode-hook 'cider-mode)
+(add-hook 'clojure-mode-hook 'eldoc-mode)
 
 ;; provides minibuffer documentation for the code you're typing into the repl
 (add-hook 'cider-mode-hook 'eldoc-mode)
@@ -58,7 +59,6 @@
 (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
 
-
 ;; key bindings
 
 (global-set-key (kbd "C-c M-o") 'cider-repl-clear-buffer)
@@ -71,7 +71,6 @@
     (cider-repl-set-ns ns)
     (cider-interactive-eval (format "(println '(def server (%s/start))) (println 'server)" ns))
     (cider-interactive-eval (format "(def server (%s/start)) (println server)" ns))))
-
 
 (defun cider-refresh ()
   (interactive)
@@ -87,4 +86,11 @@
      (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
+
+;;;;
+;; nrepl
+;;;;
+
+(setq nrepl-hide-special-buffers t)
+(setq nrepl-buffer-name-show-port t)
 

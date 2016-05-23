@@ -77,3 +77,6 @@
     (quit nil)))
 
 (setq electric-indent-mode nil)
+
+;; Set the fill area a little wider than the default of 70
+(setq fill-column 90)
