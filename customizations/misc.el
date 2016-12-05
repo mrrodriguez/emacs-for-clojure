@@ -21,6 +21,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Desktop mode
+
 (desktop-save-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -30,4 +31,11 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Showing columns
+
 (setq column-number-mode t)
+
+;; TODO FIXME
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Indentation for Clojure forms
+;; (define-clojure-indent
+;;   (lang/deffact '(2 nil nil (1))))

@@ -29,6 +29,9 @@
 ;; Cider
 ;;;;
 
+;; Due to https://github.com/clojure-emacs/cider/issues/1758 there is a perf issue with this being non-nil
+(setq cider-font-lock-dynamically nil)
+
 ;; Enable cider in Clojure
 (add-hook 'clojure-mode-hook 'cider-mode)
 (add-hook 'clojure-mode-hook 'eldoc-mode)
