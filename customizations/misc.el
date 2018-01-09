@@ -34,11 +34,23 @@
 ;;; Global key bindings
 
 (global-set-key (kbd "M-~") 'other-frame)
+(global-set-key (kbd "C-'") 'other-window)
+(defun back-other-window ()
+  (interactive)
+  (other-window -1))
+(global-set-key (kbd "C-,") 'back-other-window)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Showing columns
 
 (setq column-number-mode t)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Default to `split-window-horizontally` behavior
+
+(setq split-height-threshold nil)
+(setq split-width-threshold 0)
 
 ;; TODO FIXME
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

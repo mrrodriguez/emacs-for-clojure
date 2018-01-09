@@ -9,3 +9,8 @@ projectile.cache
 auto-save-list
 backups
 eshell/**
+elpa/**
+elpa/archives/**
+.emacs.desktop*
+tramp
+network-security.data

@@ -80,3 +80,7 @@
 
 ;; Set the fill area a little wider than the default of 70
 (setq fill-column 90)
+
+;; easy-kill
+(global-set-key [remap kill-ring-save] 'easy-kill)
+(global-set-key [remap mark-sexp] 'easy-mark)

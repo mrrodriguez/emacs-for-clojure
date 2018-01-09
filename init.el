@@ -144,7 +144,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (yaml-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit markdown-mode magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking))))
+    (helm cljr-helm easy-kill yaml-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit markdown-mode magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

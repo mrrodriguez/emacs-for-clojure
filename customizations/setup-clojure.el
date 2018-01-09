@@ -97,3 +97,9 @@
 (setq nrepl-hide-special-buffers t)
 (setq nrepl-buffer-name-show-port t)
 
+;;;;
+;; Helm
+;;;;
+
+(require 'helm)
+(helm-cider-mode 1)
