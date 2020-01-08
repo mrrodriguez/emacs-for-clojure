@@ -1,6 +1,9 @@
 ;; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; tool-bar-mode
+(tool-bar-mode -1)
+
 ;; shell scripts
 (setq-default sh-basic-offset 2)
 (setq-default sh-indentation 2)
@@ -45,6 +48,9 @@
 
 (setq column-number-mode t)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Formatting
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Default to `split-window-horizontally` behavior
@@ -57,3 +63,10 @@
 ;; Indentation for Clojure forms
 ;; (define-clojure-indent
 ;;   (lang/deffact '(2 nil nil (1))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Custom vars
+
+(custom-set-variables
+ ;; Markdown
+ '(markdown-command "/usr/local/bin/markdown"))

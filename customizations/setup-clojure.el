@@ -46,6 +46,8 @@
 (setq cider-show-error-buffer nil)
 (setq cider-auto-select-error-buffer nil)
 
+(setq cider-auto-jump-to-error nil)
+
 ;; Where to store the cider history.
 (setq cider-repl-history-file "~/.emacs.d/cider-history")
 

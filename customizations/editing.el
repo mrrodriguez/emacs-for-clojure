@@ -78,8 +78,8 @@
 
 (setq electric-indent-mode nil)
 
-;; Set the fill area a little wider than the default of 70
-(setq fill-column 90)
+;; Set the fill area a little wider than the default
+(setq-default fill-column 100)
 
 ;; easy-kill
 (global-set-key [remap kill-ring-save] 'easy-kill)

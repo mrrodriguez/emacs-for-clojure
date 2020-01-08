@@ -144,10 +144,12 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (helm cljr-helm easy-kill yaml-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit markdown-mode magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking))))
+    (cider helm cljr-helm easy-kill yaml-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit markdown-mode magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
